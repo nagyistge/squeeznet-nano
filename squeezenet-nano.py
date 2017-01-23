@@ -109,19 +109,19 @@ def train_model(model,path):
         #randomizing folder order
         folder=np.random.permutation(os.listdir(path))
         for dirc in folder:
-			for files in os.listdir(path+dirc):
-				if dirc=='Carbon nanotubes':
-					y=np.array([[1,0,0]])
-				elif dirc=='Particles':
-					y=np.array([[0,1,0]])
-				else:
-					y=np.array([[0,0,1]])
-				print dirc
-				print files
-				print i
-				X=image_proc(path+dirc+"/"+files)				
-				model.fit(X,y,batch_size=1, nb_epoch=10)
-				sleep(5)
+		for files in os.listdir(path+dirc):
+			if dirc=='Carbon nanotubes':
+				y=np.array([[1,0,0]])
+			elif dirc=='Particles':
+				y=np.array([[0,1,0]])
+			else:
+				y=np.array([[0,0,1]])
+			print dirc
+			print files
+			print i
+			X=image_proc(path+dirc+"/"+files)				
+			model.fit(X,y,batch_size=1, nb_epoch=10)
+			sleep(5)
     return model
     
  
