@@ -3,7 +3,7 @@ SEM/TEM image shape classification using squeeznet
 
 Courtsey: https://github.com/rcmalli/keras-squeezenet
 
-In this project I tried using transfer learning to teach a *modified* squeeznet  to classify scanning electron microscope (SEM) and transmission electron microscope (TEM) images. There are three main classes nanotubes, nanoparticles and random images(None).
+In this project I used transfer learning to teach a *modified* squeeznet  to classify scanning electron microscope (SEM) and transmission electron microscope (TEM) images of nanomaterials. There are three main predicting classes nanotubes, nanoparticles and random images(None).
 
 # Modified Squeeznets
 
